@@ -3,7 +3,9 @@ import React from 'react';
 const Body = () => {
     return (
         <div>
-            <h1>hello</h1>
+            <form>
+                <input type="text" placeholder="Please write your name..."/>
+            </form>
         </div>
     );
 };
