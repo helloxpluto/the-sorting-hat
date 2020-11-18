@@ -1,11 +1,13 @@
 import React from 'react';
+import png from '../images/hat.png'
+
 
 const Hat = () => {
     return (
-        <div>
-            
-        </div>
-    );
+			<div>
+				<img src={png} />
+			</div>
+		);
 };
 
 export default Hat;

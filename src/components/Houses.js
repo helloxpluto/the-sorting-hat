@@ -18,7 +18,7 @@ const houses = [
 const Houses = () => {
     return (
         <div>
-            <p houses={houses} />
+            
         </div>
     );
 };
