@@ -8,57 +8,64 @@ import Houses from './components/Houses';
 import Hat from './components/Hat';
 
 function App() {
-	const [house, setHouse] = useState('');
+	// const [house, setHouse] = useState('');
 	const [houseInfo, setHouseInfo] = useState('');
-  const [userName, setUserName] = useState('');
+//   const [userName, setUserName] = useState('name');
 
-	useEffect(() => {
-		const url = 'https://www.potterapi.com/v1/sortingHat';
-		fetch(url)
-			.then((res) => res.json())
-			.then((res) => setHouse(res))
-			.catch(console.error);
-	}, []);
+	// useEffect(() => {
+	// 	const url = 'https://www.potterapi.com/v1/sortingHat';
+	// 	fetch(url)
+	// 		.then((res) => res.json())
+	// 		.then((res) => setHouse(res))
+	// 		.catch(console.error);
+	// }, []);
 
-	function handleSubmit(event) {
-		event.preventDefault();
+	// function handleSubmit(event) {
+	// 	event.preventDefault();
+
+	// 	var useName = userName 
+	
+	// }
+
+	// function handleChange (event) {
+	// 	event.preventDefault()
+	// 	setUserName(
+	// 		event.target.input
+	// 	)
+	// 	console.log(setUserName)
 		
-	}
-
-	function handleChange(event) {
-		event.preventDefault()
-		setUserName(event.target.value)
-	}
+	// }
 
 	return (
 		<div className='App'>
 			<Header />
 			<Card className='textCenter'>
 				<Card.Header>
-					<div className='hat' >
-					<Hat />
+					<div className='hat'>
+						<Hat />
 					</div>
 				</Card.Header>
-				<Card.Body className='cardBody'>
+				<Body />
+				{/* <Card.Body className='cardBody'>
 					<Card.Text>
 						Enter your name and let the sorting hat choose your HOUSE
 					</Card.Text>
 					<Body house={house} />
-					<Form.Group className='formCard'>
+					<Form.Group controlId="formPlaintextName" className='formCard'>
 						<Form.Control
 							className='nameForm'
 							size='lg'
 							type='text'
 							placeholder='Enter your name'
-							onChange={handleChange}
+						
 						/>
-							<Button className='findButton' variant='outline-warning' type='submit' onClick={handleSubmit}>
+							<Button className='findButton' variant='outline-warning' type='submit' onClick={handleChange}>
 							Find my house
-						</Button>{' '}
+						</Button>
 					</Form.Group>
-				</Card.Body>
+				</Card.Body> */}
 			</Card>
-{console.log(Form)}
+			{console.log(Form)}
 			{/* <form onSubmit={handleSubmit}>
 				<input
 					type='text'
@@ -81,5 +88,6 @@ function App() {
 		</div>
 	);
 }
+
 
 export default App;
