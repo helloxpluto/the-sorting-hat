@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# The Sorting Hat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The sorting hat allows the user to input their name and have the sorting hat from harry potter tell them wha House they would be in.
+and display their name house and the logo to their house.
 
-## Available Scripts
+the API i used
+https://www.potterapi.com/
 
-In the project directory, you can run:
 
-### `npm start`
+## Structure
+![structure](https://user-images.githubusercontent.com/70493561/100774359-d70dc380-33b6-11eb-9a57-8b2ed21f51bf.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wire Frames
+![pageFront](https://user-images.githubusercontent.com/70493561/100774410-e55bdf80-33b6-11eb-8b63-9d69612f4c79.jpeg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![pageFront2](https://user-images.githubusercontent.com/70493561/100774385-dd9c3b00-33b6-11eb-84c4-f55b3e089851.jpeg)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories
+-user should be able to type their name into an input field
+-user should have a button to submit their name and start the sorting process .
+-when the user submits their name their name and house should be displayed on the screen.
+-the users house logo should also be displayed on the screen with their name and house.
 
-### `npm run build`
+## MVP Goals
+-there is an input field and button.
+-there is a message that displays the name and house of the user.
+-there is a logo of the users sorted house that appears under the sorting hat.
+-the message and logo should slide back off the screen.
+-then you can restart it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Stretch Goals
+-The hat will have audio and a waiting period before displaying the users name and house on the field. Then in audio announces the name of the house.
+-have a gif or video for the hat thinking then saying the users house name.
+-have it so you can’t enter the same name twice. And it tells you you have already been sorted.
