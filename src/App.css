@@ -41,6 +41,7 @@
 
 .formCard{
   max-width: 50%;
+  min-width: 50%;
  
 }
 
@@ -50,10 +51,11 @@
   margin: 30px;
   text-align: center;
   width: 32ch;
+  min-width: 36ch;
 }
 
 .findButton {
-  margin: 10px;
+  margin: 25px;
   background-color: rgb(0, 81, 255);
 }
 
@@ -65,12 +67,21 @@
 }
 
 .houseButton {
-  margin-bottom: 35px;
+  margin: 25px;
 }
 
 .bodyText {
   width: 30ch;
   margin: 0px 80px
+}
+
+.houseImg {
+  width: 220px;
+
+}
+
+.nameForm {
+  align-self: center;
 }
 
 @import 'bootstrap/dist/css/bootstrap.min.css';

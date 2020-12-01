@@ -5,7 +5,7 @@ import png from '../images/hat.png'
 const Hat = () => {
     return (
 			<div>
-				<img src={png} alt='illustration of hsrrypotters sorting hat' />
+				<img src={png} alt='illustration of harry potters sorting hat' />
 			</div>
 		);
 };

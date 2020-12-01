@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
+import GryffindorPNG from '../images/Gryffindor.png'
+import HufflepuffPNG from '../images/Hufflepuff.png'
+import RavenclawPNG from '../images/Ravenclaw.png'
+import SlytherinPNG from '../images/Slytherin.png'
 
 
 
@@ -14,6 +18,8 @@ const Body = () => {
 	const [houseName, setHouseName] = useState('')
 
 	const [houseChange, setHouseChange] = useState('')
+
+	const [houseImage, setHouseImage ] = useState('')
 	
 	const Gryffindor = 'Gryffindor values bravery, daring, nerve, and chivalry.Its emblematic animal is the lion, and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the House Ghost. The founder of the House was Godric Gryffindor. Gryffindor corresponds to the element of Fire. The common room was located in one of the highest towers at Hogwarts, the entrance was situated on the seventh floor in the east wing of the castle and is guarded by a portrait of The Fat Lady. She permits entrance if given the correct password, which is changed numerous times throughout the school year. Famous Gryffindors include Albus Dumbledore, Harry Potter, and Minerva McGonagall.'
 
@@ -32,27 +38,34 @@ const Body = () => {
 			.then((res) => setHouse(res))
 			.catch(console.error);
 	}, []);
-	console.log(house);
+	
 
 	function changeHouses() {
 		if (house === 'Gryffindor') {
 			setHouseChange(Gryffindor)
+			setHouseImage(GryffindorPNG);
 		} else if (house === 'Hufflepuff') {
 			setHouseChange(Hufflepuff)
+			setHouseImage(HufflepuffPNG);
 		} else if (house === 'Ravenclaw') {
 			setHouseChange(Ravenclaw)
+			setHouseImage(RavenclawPNG);
 		} else if (house === 'Slytherin') {
 			setHouseChange(Slytherin)
+			setHouseImage(SlytherinPNG);
 		}
 	}
-	
+
+	const refreshPage = () => {
+	 window.location.reload();
+	}
 
 
 	
 	function handleSubmit(event) {
 		event.preventDefault();
 		setDisplayName(userName)
-		console.log(event);
+		
 	}
 	
 	function handleChange(event) {
@@ -110,11 +123,26 @@ const Body = () => {
 					)}
 					{displayName && houseName && (
 						<Card>
+							<p>scroll down ...</p>
 							<Card.Body className='bodyText'>
+								<div>
+									<img
+										className='houseImg'
+										src={houseImage}
+										alt='matching harry potter house image'
+									/>
+								</div>
 								<div>{houseName}</div>
 							</Card.Body>
 						</Card>
 					)}
+					<Button
+						className='findButton'
+						variant='outline-warning'
+						type='submit'
+						onClick={refreshPage}>
+						Reset The Sorting Hat
+					</Button>
 				</Card.Body>
 			</Card>
 		</div>
